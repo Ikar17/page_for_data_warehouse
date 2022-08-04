@@ -72,7 +72,8 @@ nav .container .btn{
     padding: 130px 0 100px 0;
     background-image: url("img/bg/bg-lp.svg");
     background-repeat: no-repeat;
-    background-position: 83% 42%;
+    background-position: 88% 92%;
+    box-sizing: border-box;
 }
 
 .landing-page h1{
@@ -88,4 +89,26 @@ nav .container .btn{
     color: var(--dark-gray);
     margin: 50px 0 50px 0;
     width: 33%;
+}
+
+.about{
+    padding: 125px 92px 125px 50%;
+    background: rgba(240, 99, 184, 0.15) url("img/bg/bg-about.svg");
+    background-repeat: no-repeat;
+    background-position: 1% 80%;
+    border-radius: 50px;
+}
+
+.about h1{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 130%;
+    color: var(--dark-blue);
+    padding-bottom: 40px;
+}
+
+.about p{
+    font-size: 18px;
+    line-height: 160%;
+    color: var(--dark-gray);
 }
