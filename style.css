@@ -22,7 +22,7 @@ h3{
     color: var(--dark-blue);
 }
 .container{
-    width: 1120px;
+    width: 96%;
     margin: 0 auto;
 }
 
@@ -59,7 +59,7 @@ h3{
 }
 
 nav{
-    margin-top: 50px;
+    margin-top: 3%;
 }
 
 nav .container{
@@ -69,15 +69,17 @@ nav .container{
 }
 
 nav .container .btn{
-    position: absolute;
-    right: 0;
+    position: fixed;
+    right: 5px;
+    bottom: 20px;
+}
+
+nav .container .btn img{
+    display:none;
 }
 
 .nav__links{
-    display:flex;
-    justify-content: space-between;
-    width:28.75%;
-    margin-left: 10.9%;
+    display:none;
 }
 
 .nav__links a{
