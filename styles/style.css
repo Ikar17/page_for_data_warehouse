@@ -29,6 +29,7 @@ h3{
 .btn{
     padding: 21px 29px;
     border-radius: 50px;
+    background: none;
     border:0;
     font-size: 16px;
     font-weight: 700;
@@ -50,12 +51,17 @@ h3{
 
 .btn--violet{
     background-color: var(--violet);
+    box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
     color: white;
 }
 
 .btn--pink{
     background-color: var(--pink);
     color:White;
+}
+
+.btn--mobile-menu img{
+    width: 40px;
 }
 
 nav{
@@ -68,14 +74,20 @@ nav .container{
     align-items: center;
 }
 
-nav .container .btn{
+nav .container .btn--white{
     position: fixed;
     right: 5px;
     bottom: 20px;
 }
 
-nav .container .btn img{
+nav .container .btn--white img{
     display:none;
+}
+
+nav .container .btn--mobile-menu{
+    position: absolute;
+    right: 0;
+    padding: 0;
 }
 
 .nav__links{
@@ -93,33 +105,33 @@ nav .container .btn img{
 }
 
 .landing-page{
-    min-height: 92vh;
-    padding: 130px 0 100px 0;
-    background-image: url("img/bg/bg-lp.svg");
+    min-height: 80vh;
+    padding: 50px 0 30px 0;
+    background-image: url("../img/bg/bg-lp.svg");
     background-repeat: no-repeat;
-    background-position: 81% 90%;
+    background-position: 50% 80%;
+    background-size: 80%;
 }
 
 .landing-page h1{
-    width: 55%;
     color: var(--dark-blue);
     font-weight: 700;
-    font-size: 80px;
+    font-size: 45px;
 }
 
 .landing-page p{
     font-size: 18px;
     line-height: 160%;
     color: var(--dark-gray);
-    margin: 50px 0 50px 0;
-    width: 33%;
+    margin: 30px 0 30px 0;
 }
 
 .about{
-    padding: 125px 92px 125px 50%;
-    background: rgba(240, 99, 184, 0.15) url("img/bg/bg-about.svg");
+    padding: 20px 10px 10px 10px;
+    background: rgba(240, 99, 184, 0.15) url("../img/bg/bg-about.svg");
     background-repeat: no-repeat;
-    background-position: 1% 80%;
+    background-position: 50% 40%;
+    background-size: 60%;
     border-radius: 50px;
 }
 
@@ -127,18 +139,20 @@ nav .container .btn img{
     font-weight: 700;
     line-height: 130%;
     color: var(--dark-blue);
-    padding-bottom: 40px;
+    padding-bottom: 200px;
+    text-align: center;
 }
 
 .about p{
     font-size: 18px;
     line-height: 160%;
     color: var(--dark-gray);
+    text-align: justify;
 }
 
 .features{
     min-height: 100vh;
-    margin: 150px 0 150px 0;
+    margin: 50px 0 150px 0;
     text-align: center;
 }
 
@@ -156,33 +170,29 @@ nav .container .btn img{
 .features__text p{
     font-size: 18px;
     line-height: 160%;
-    width: 584px;
     margin: 0 auto;
     color: var(--dark-gray);
 }
 
 .features__list{
     display: grid;
-    grid-template-areas: "a1 a2" "a3 a4";
-    grid-template-columns: calc(50%-45px) calc(50%-45px);
-    grid-gap: 45px;
-    
+    grid-template-areas: "a1" "a2" "a3" "a4";
+    grid-template-columns: 100%;
 }
 
 .features__list__item{
     position: relative;
     text-align: left;
-    width: 532px;
     height: 388px;
     background-repeat: no-repeat;
-    background-position: 95% 0%, 0% 50%;
+    background-position: 0% 50%;
 }
 
 .features__list__item h2{
     position: absolute;
     left: 50%;
     top: 49px;
-    width: 220px;
+    width: 60%;
     height: 50px;
     font-size: 24px;
     line-height: 130%;
@@ -194,7 +204,7 @@ nav .container .btn img{
     position: absolute;
     left: 50%;
     top: 120px;
-    width: 220px;
+    width: 50%;
     height: 160px;
     font-size: 16px;
     line-height: 160%;
@@ -203,7 +213,7 @@ nav .container .btn img{
 
 .link--with--icon{
     position: absolute;
-    top: 300px;
+    top: 85%;
     left: 50%;
     text-decoration: none;
     font-weight: bold;
@@ -217,27 +227,27 @@ nav .container .btn img{
 
 .features__list__item--1{
     grid-area: a1; 
-    background-image: url("img/bg/bg-f-1.svg"), url("img/bg/bg-f-1b.svg") ;
+    background-image: url("../img/bg/bg-f-1b.svg") ;
 }
 
 .features__list__item--2{
     grid-area: a2; 
-    background-image: url("img/bg/bg-f-2.svg"), url("img/bg/bg-f-2b.svg") ;
+    background-image: url("../img/bg/bg-f-2b.svg") ;
 }
 
 .features__list__item--3{
     grid-area: a3; 
-    background-image: url("img/bg/bg-f-3.svg"), url("img/bg/bg-f-3b.svg") ;
+    background-image: url("../img/bg/bg-f-3b.svg") ;
 }
 
 .features__list__item--4{
     grid-area: a4; 
-    background-image: url("img/bg/bg-f-4.svg"), url("img/bg/bg-f-4b.svg") ;
+    background-image: url("../img/bg/bg-f-4b.svg") ;
 }
 
 .testimonials{
     height: 90vh;
-    background-image: url("img/bg/bg-t-1.svg"), url("img/bg/bg-t-2.svg"), url("img/bg/bg-t-3.svg");
+    background-image: url("../img/bg/bg-t-1.svg"), url("../img/bg/bg-t-2.svg"), url("../img/bg/bg-t-3.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%, 50% 70%, 50% 90%;
 }
