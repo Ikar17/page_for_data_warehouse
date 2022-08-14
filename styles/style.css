@@ -275,8 +275,8 @@ footer{
 
 .footer__offer{
     display: grid;
-    grid-template-columns: 52% 36%;
-    grid-gap:123px;
+    grid-template-rows: 2;
+    grid-gap: 40px;
 }
 
 .footer__btn{
@@ -286,6 +286,10 @@ footer{
 
 .footer__btn .btn:nth-of-type(1){
     margin-right: 20px;
+}
+
+.footer__btn .btn--white{
+    display:none;
 }
 
 .footer__offer__text h1{
@@ -304,10 +308,9 @@ footer{
 
 .footer__info{
     display: grid;
-    grid-template-columns: 38% 14% 14% 16%;
-    grid-gap:50px;
-    margin: 153px 0 0 0;
-
+    grid-template-areas: "b2 b3 b4";
+    grid-gap: 40px;
+    margin: 40px 0 0 50px;
 }
 
 .footer__info a{
@@ -315,6 +318,11 @@ footer{
     font-size: 16px;
     line-height: 250%;
     color: var(--dark-blue);
+}
+
+.footer__info__contact{
+    grid-area: b1;
+    display:none;
 }
 
 .footer__info__contact header{
@@ -345,9 +353,21 @@ footer{
     font-weight: 500; 
 }
 
+.footer__info__about{
+    grid-area: b2;
+}
+
+.footer__info__help{
+    grid-area: b3;
+}
+
 .footer__info__about, .footer__info__help{
     display: flex;
     flex-direction: column;
+}
+
+.footer__info__media{
+    grid-area: b4;
 }
 
 .footer__info__about h3, .footer__info__help h3, .footer__info__media h3{

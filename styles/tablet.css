@@ -114,3 +114,24 @@ nav .container .btn--mobile-menu{
 .features__list__item--4{
     background-image: url("img/bg/bg-f-4.svg"), url("img/bg/bg-f-4b.svg") ;
 }
+
+.footer__offer{
+    grid-template-columns: 52% 36%;
+    grid-gap:123px;
+}
+
+.footer__btn .btn--white{
+    display:initial;
+}
+
+.footer__info{
+    display: grid;
+    grid-template-areas: "b1 b2 b3 b4";
+    grid-gap:50px;
+    margin: 153px 0 0 0;
+
+}
+
+.footer__info__contact{
+    display:initial;
+}
