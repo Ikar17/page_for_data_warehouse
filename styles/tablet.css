@@ -77,7 +77,7 @@ nav .container .btn--mobile-menu{
 
 .features__list{
     grid-template-areas: "a1 a2" "a3 a4";
-    grid-template-columns: calc(50%-45px) calc(50%-45px);
+    grid-template-columns: unset;
     grid-gap: 45px;  
 }
 
@@ -100,19 +100,19 @@ nav .container .btn--mobile-menu{
 }
 
 .features__list__item--1{
-    background-image: url("img/bg/bg-f-1.svg"), url("img/bg/bg-f-1b.svg") ;
+    background-image: url("../img/bg/bg-f-1.svg"), url("../img/bg/bg-f-1b.svg") ;
 }
 
 .features__list__item--2{
-    background-image: url("img/bg/bg-f-2.svg"), url("img/bg/bg-f-2b.svg") ;
+    background-image: url("../img/bg/bg-f-2.svg"), url("../img/bg/bg-f-2b.svg") ;
 }
 
 .features__list__item--3{
-    background-image: url("img/bg/bg-f-3.svg"), url("img/bg/bg-f-3b.svg") ;
+    background-image: url("../img/bg/bg-f-3.svg"), url("../img/bg/bg-f-3b.svg") ;
 }
 
 .features__list__item--4{
-    background-image: url("img/bg/bg-f-4.svg"), url("img/bg/bg-f-4b.svg") ;
+    background-image: url("../img/bg/bg-f-4.svg"), url("../img/bg/bg-f-4b.svg") ;
 }
 
 .footer__offer{
@@ -127,11 +127,23 @@ nav .container .btn--mobile-menu{
 .footer__info{
     display: grid;
     grid-template-areas: "b1 b2 b3 b4";
+    grid-template-columns: 38% 14% 14% 16%;
     grid-gap:50px;
     margin: 153px 0 0 0;
 
 }
 
 .footer__info__contact{
-    display:initial;
+    width: unset;
+}
+.footer__info__contact header{
+    margin-top: unset;
+}
+
+.footer__info__contact p:nth-of-type(1){
+    margin: 67px 0 10px 0;
+}
+
+.footer__info__media{
+    display: block;
 }
