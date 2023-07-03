@@ -6,6 +6,22 @@
     width: 28.75%;
 }
 
+.about{
+    padding: 125px 92px 125px 50%;
+    background-size: unset;
+    background-position: 1% 80%;
+}
+
+.about h1{
+    text-align: left;
+    padding-bottom: 40px;
+}
+
+.about p{
+    text-align: left;
+}
+
+
 .features__list{
     grid-template-areas: "a1 a2" "a3 a4";
     grid-template-columns: calc(50% - 22.5px); 

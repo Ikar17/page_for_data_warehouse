@@ -132,7 +132,7 @@ nav .container .btn--mobile-menu{
     background: rgba(240, 99, 184, 0.15) url("../img/bg/bg-about.svg");
     background-repeat: no-repeat;
     background-position: 50% 40%;
-    background-size: 60%;
+    background-size: 50%;
     border-radius: 50px;
 }
 
@@ -140,7 +140,7 @@ nav .container .btn--mobile-menu{
     font-weight: 700;
     line-height: 130%;
     color: var(--dark-blue);
-    padding-bottom: 200px;
+    padding-bottom: 260px;
     text-align: center;
 }
 
