@@ -36,20 +36,22 @@ nav .container .btn--mobile-menu{
 }
 
 .landing-page{
-    min-height: 92vh;
     padding: 130px 0 100px 0;
-    background-position: 81% 90%;
-    background-size: unset;
+    background-position: 100% 72%;
+    background-size: 55%;
 }
 
 .landing-page h1{
-    width: 55%;
     font-size: 80px;
 }
 
 .landing-page p{
-    width: 33%;
+    width: 45%;
     margin: 50px 0 50px 0;
+}
+
+.landing-page button{
+    margin-bottom: 0;
 }
 
 .about{

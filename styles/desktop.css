@@ -1,3 +1,16 @@
 .container{
     width: 1120px;
 }
+
+.landing-page{
+    background-position: 100% 90%;
+    background-size: 70%;
+}
+
+.landing-page h1{
+    width: 55%;
+}
+
+.landing-page p{
+    width: 33%;
+}

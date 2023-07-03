@@ -106,7 +106,6 @@ nav .container .btn--mobile-menu{
 }
 
 .landing-page{
-    min-height: 80vh;
     padding: 50px 0 30px 0;
     background-image: url("../img/bg/bg-lp.svg");
     background-repeat: no-repeat;
@@ -125,6 +124,10 @@ nav .container .btn--mobile-menu{
     line-height: 160%;
     color: var(--dark-gray);
     margin: 30px 0 30px 0;
+}
+
+.landing-page button{
+    margin-bottom: 240px;
 }
 
 .about{
