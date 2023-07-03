@@ -1,7 +1,45 @@
 .container{
-    width: 940px;
+    width: 990px;
 }
 
 .nav__links{
     width: 28.75%;
+}
+
+.features__list{
+    grid-template-areas: "a1 a2" "a3 a4";
+    grid-template-columns: calc(50% - 22.5px); 
+}
+
+
+.features__list p{
+    left: 52%;
+}
+
+.features__list h2{
+    left: 52%;
+}
+
+.link--with--icon{
+    left: 52%;
+}
+
+.features__item{
+    background-position: 100% 0%, 0% 50%;
+}
+
+.features__list__item--1{
+    background-color: white;
+}
+
+.features__list__item--2{
+    background-color: white;
+}
+
+.features__list__item--3{
+    background-color: white;
+}
+
+.features__list__item--4{
+    background-color: white;
 }

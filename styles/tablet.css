@@ -75,28 +75,36 @@ nav .container .btn--mobile-menu{
     width: 52%;
 }
 
-.features__list{
-    grid-template-areas: "a1 a2" "a3 a4";
-    grid-template-columns: unset;
-    grid-gap: 45px;  
-}
-
-.features__list__item{
-    width: 532px;
-    height: 388px;
-    background-position: 95% 0%, 0% 50%;
-}
-
-.features__list__item h2{
+.features__list p{
+    position: absolute;
+    left: 50%;
+    top: 120px;
     width: 220px;
+    height: 160px;
+    margin-bottom: 0;
 }
 
-.features__list__item p{
+.features__list h2{
+    position: absolute;
+    left: 50%;
+    top: 49px;
     width: 220px;
+    height: 50px;
+    font-size: 24px;
+    margin: 0;
+    text-align: left;
+}
+
+.features__item{
+    height: 360px;
+    background-position: 100% 0%, 10% 50%;
+    padding: 0;
 }
 
 .link--with--icon{
+    position: absolute;
     top: 300px;
+    left: 50%;
 }
 
 .features__list__item--1{
