@@ -65,6 +65,27 @@ h3{
     width: 40px;
 }
 
+.btn--left-arrow{
+    background: url('../img/icons/leftArrow.svg');
+    background-repeat: no-repeat;
+    width: 50px;
+    border: 0;
+    cursor: pointer;
+}
+
+.btn--right-arrow{
+    background: url('../img/icons/rightArrow.png');
+    background-repeat: no-repeat;
+    width: 50px;
+    border: 0;
+    cursor: pointer;
+}
+
+.btn--arrow--off{
+    opacity: 0.5;
+    cursor:unset;
+}
+
 nav{
     margin-top: 3%;
 }
@@ -246,24 +267,72 @@ nav .container .btn--mobile-menu{
 }
 
 .testimonials{
-    height: 90vh;
+    overflow: hidden;
+    height: 100vh;
 }
 
 .testimonials .container{
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     background-color: var(--violet);
-    height: 90vh;
+    height: 100%;
     border-radius: 50px;
-    z-index: -1;
 }
 
-.testimonials h1{
-    position:absolute;
-    top: 109px;
-    left: 93px;
+.testimonials__header{
+    display: flex;
+    justify-content: center;
     line-height: 130%;
     font-weight: bold;
     color: white;
+}
+
+.testimonials__slides{
+    display: flex;
+    gap: 10px;
+    height: 40%;
+    transition-duration: 200ms;
+}
+
+.testimonials__opinion{
+    display: flex;
+    width: 96%;
+    height: 100%;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 60px 70px 50px 70px;
+    gap: 30px;
+    transition-duration: 500ms;
+}
+
+.testimonials__buttons{
+    display: flex;
+    justify-content: center;
+    height: 40px;
+    gap: 30px;
+}
+
+
+.testimonials__opinion__photo{
+    display: flex;
+    justify-content: flex-end;
+    width: 25%;
+}
+
+.testimonials__opinion__photo img{
+    width: 90px;
+}
+
+.testimonials__opinion__content{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 75%;
+    padding-top: 15px;
 }
 
 footer{

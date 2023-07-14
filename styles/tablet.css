@@ -119,6 +119,34 @@ nav .container .btn--mobile-menu{
     background-image: url("../img/bg/bg-f-4.svg"), url("../img/bg/bg-f-4b.svg") ;
 }
 
+.testimonials__header{
+    position: absolute;
+    top: 109px;
+    left: 93px;
+    justify-content: flex-start;
+}
+
+.testimonials__slides{
+   position: absolute;
+   top: 249px;
+   left: 93px;
+}
+
+.testimonials__opinion{
+    width: 400px;
+    height: 330px;
+}
+
+.testimonials__opinion:nth-of-type(1){
+    width: 645px;
+}
+
+.testimonials__buttons{
+    position: absolute;
+    bottom: 58px;
+    right: 116px;
+} 
+
 .footer__offer{
     grid-template-columns: 52% 36%;
     grid-gap:123px;

@@ -14,3 +14,16 @@
 .landing-page p{
     width: 33%;
 }
+
+@media only screen and (min-width: 1400px){
+    .features{
+        min-height: 850px;
+    }
+    .testimonials{
+        height: 850px;
+    }
+
+    footer{
+        height: 850px;
+    }
+}
